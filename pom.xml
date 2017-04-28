@@ -57,8 +57,19 @@
         </dependency>
 
         <dependency>
-            <groupId>celery</groupId>
+            <groupId>love.moon</groupId>
             <artifactId>util</artifactId>
+            <version>1.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
             <version>1.0</version>
         </dependency>
 
@@ -74,7 +85,7 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <port>8080</port>
-                    <path>/web</path>
+                    <path>/atom</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <server>tomcat7</server>
                 </configuration>

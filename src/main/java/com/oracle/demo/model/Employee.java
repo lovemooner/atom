@@ -1,13 +1,24 @@
 package com.oracle.demo.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.sql.Date;
 
+
+@Entity
+@Table(name = "CA_ATOM_DEMO_EMPLOYEE")
 public class Employee {
     private int id;
     private String name;
     private int age;
     private Date updated;
 
+    @Id
+    @Column(name="ID")
     public int getId() {
         return id;
     }

@@ -98,13 +98,13 @@ public class Client {
     }
 
     public static void main(String[] args) throws ParseException {
-        String url = "http://localhost:8080/web/employee";
+        String url = "http://slc11fsp.us.oracle.com:8080/atom/employee";
 //        String url = "http://slc11fsp.us.oracle.com:8080/atom/employee";
-        int id = 1001;
+        int id = 1000;
 //        testGET(url);
-        testPost(url, id);
+//        testPost(url, id);
 //        testPut(url,id);
-//        testDelete(url, id);
+        testDelete(url, id);
 
 
     }

@@ -5,6 +5,11 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
+
+    <listener>
+        <listener-class>love.moon.web.context.DBConfigListener</listener-class>
+    </listener>
+
     <servlet id="abdera">
         <servlet-name>Abdera</servlet-name>
         <servlet-class>com.oracle.demo.abdera.server.EmployeeProviderServlet</servlet-class>
